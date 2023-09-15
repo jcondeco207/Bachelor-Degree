@@ -1,0 +1,153 @@
+/*
+ _____     _          _           
+|_   _|_ _| |__   ___| | __ _ ___ 
+  | |/ _` | '_ \ / _ \ |/ _` / __|
+  | | (_| | |_) |  __/ | (_| \__ \
+  |_|\__,_|_.__/ \___|_|\__,_|___/
+  
+*/
+
+--Tabela Animais
+create table animais(
+  				nome char(40),
+  				sexo char(40),
+  				registo integer,
+          classe char(40),
+          familia char(40),
+          especie char(40),
+          ordem char(40),
+          idade integer,
+  				PRIMARY key(registo))
+
+--Tabela Capturado
+create table capturado(
+  				local char(40),
+  				dataCaptura char(40),
+  				dataNasc char(40),
+          registo char(40),
+  				PRIMARY key(registo))
+
+--Tabela Cativeiro
+create table cativeiro(
+  				registo char(40),
+          dataNasc char(40),
+  				PRIMARY key(registo))
+
+--Tabela parentesco
+create table parentesco(
+  				registo integer,
+          registoP integer,
+  				FOREIGN key(registo) references animais(registo),
+  				FOREIGN key(registoP) references animais(registo))
+
+--Tabela Funcionários
+create table funcionarios(
+  				NIF integer,
+          nome char(40),
+          inicio char(40),
+  				PRIMARY key(NIF))
+
+--Tabela temResponsável
+create table temResponsável(
+  				superiorNIF integer,
+          subordinadoNIF integer,
+          FOREIGN key(superiorNIF) references funcionarios(NIF),
+  				PRIMARY key(subordinadoNIF))
+
+--Tabela numeroFunc
+create table numeroFunc(
+  				telefone integer,
+          NIF integer,
+          PRIMARY key(telefone,NIF))
+
+--Tabela veterinário
+create table veterinario(
+  				NIF integer,
+  				PRIMARY key(NIF))
+
+--Tabela tratadorResp
+create table tratadorResp(
+  				NIF integer,
+  				PRIMARY key(NIF))
+
+--Tabela tratadorAuxiliar
+create table tratadorAuxiliar(
+  				NIF integer,
+  				PRIMARY key(NIF))
+
+--Tabela administrativo
+create table administrativo(
+  				NIF integer,
+  				PRIMARY key(NIF))
+
+--Tabela vet
+create table vet(
+  				NIF integer,
+          registo integer,
+          data char(40),
+          hora char(40),
+  				PRIMARY key(registo, data, hora),
+          FOREIGN key(NIF) references funcionarios(NIF))
+
+--Tabela resp1
+create table resp1(
+  				NIF integer,
+          registo integer,
+          PRIMARY key(registo),
+          FOREIGN key(NIF) references funcionarios(NIF))
+
+--Tabela resp2
+create table resp2(
+  				NIF integer,
+          local char(40),
+          PRIMARY key(local),
+          FOREIGN key(NIF) references funcionarios(NIF))
+
+
+--Tabela animal
+create table animal(
+          registo1 integer,
+          dataHora char(40),
+  				PRIMARY key(registo1, dataHora))
+          
+
+--Tabela consulta
+create table consulta(
+          NIF integer,
+          data char(40),
+          hora char(40),
+          registo integer,
+          diagonostico char(80),
+          tratamento char(80),
+          local char(40),
+          PRIMARY key(NIF, local, registo, data, diagonostico, tratamento))
+
+--Tabela espaços
+create table spaces(
+          area real,
+          local char(40),
+          meio char(40),
+          temperatura char(40),
+          humidade char(40),
+          PRIMARY key(local))
+
+--Tabela localização
+create table location(
+          local char(40),
+          registo integer,
+          FOREIGN key(local) references spaces(local),
+          PRIMARY key(registo))
+
+--Tabela local
+create table local(
+          local char(40),
+          data char(40),
+          hora char(40),
+          registo integer,
+          NIF integer,
+          PRIMARY key(data, hora, registo),
+          FOREIGN key(local) references spaces(local))
+
+
+
+

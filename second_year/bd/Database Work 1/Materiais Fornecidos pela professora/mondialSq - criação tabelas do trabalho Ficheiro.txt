@@ -1,0 +1,68 @@
+CREATE TABLE Country
+(Name VARCHAR(50) NOT NULL UNIQUE,
+ Code VARCHAR(4) CONSTRAINT CountryKey PRIMARY KEY,
+ Capital VARCHAR(50),
+ Province VARCHAR(50),
+ Area DECIMAL CONSTRAINT CountryArea
+   CHECK (Area >= 0),
+ Population DECIMAL CONSTRAINT CountryPop
+   CHECK (Population >= 0));
+
+CREATE TABLE Economy
+(Country VARCHAR(4) CONSTRAINT EconomyKey PRIMARY KEY,
+ GDP DECIMAL CONSTRAINT EconomyGDP
+   CHECK (GDP >= 0),
+ Agriculture DECIMAL,
+ Service DECIMAL,
+ Industry DECIMAL,
+ Inflation DECIMAL,
+ Unemployment DECIMAL);
+
+
+CREATE TABLE Language
+(Country VARCHAR(4),
+ Name VARCHAR(50),
+ Percentage DECIMAL CONSTRAINT LanguagePercent 
+   CHECK ((Percentage > 0) AND (Percentage <= 100)),
+ CONSTRAINT LanguageKey PRIMARY KEY (Name, Country));
+
+CREATE TABLE Continent
+(Name VARCHAR(20) CONSTRAINT ContinentKey PRIMARY KEY,
+ Area DECIMAL(10));
+
+CREATE TABLE borders
+(Country1 VARCHAR(4),
+ Country2 VARCHAR(4),
+ Length DECIMAL 
+   CHECK (Length > 0),
+ CONSTRAINT BorderKey PRIMARY KEY (Country1,Country2) );
+
+CREATE TABLE encompasses
+(Country VARCHAR(4) NOT NULL,
+ Continent VARCHAR(20) NOT NULL,
+ Percentage DECIMAL,
+   CHECK ((Percentage > 0) AND (Percentage <= 100)),
+ CONSTRAINT EncompassesKey PRIMARY KEY (Country,Continent));
+
+CREATE TABLE Religion
+(Country VARCHAR(4),
+ Name VARCHAR(50),
+ Percentage DECIMAL CONSTRAINT ReligionPercent 
+   CHECK ((Percentage > 0) AND (Percentage <= 100)),
+ CONSTRAINT ReligionKey PRIMARY KEY (Name, Country));
+
+CREATE TABLE Organization
+(Abbreviation VARCHAR(12) Constraint OrgKey PRIMARY KEY,
+ Name VARCHAR(100) NOT NULL,
+ City VARCHAR(50) ,
+ Country VARCHAR(4) , 
+ Province VARCHAR(50) ,
+ Established DATE,
+ CONSTRAINT OrgNameUnique UNIQUE (Name));
+
+
+CREATE TABLE isMember
+(Country VARCHAR(4),
+ Organization VARCHAR(12),
+ Type VARCHAR(60) DEFAULT 'member',
+ CONSTRAINT MemberKey PRIMARY KEY (Country,Organization) );

@@ -1,0 +1,198 @@
+/*
+  ___                        
+ / _ \ _   _  ___ _ __ _   _ 
+| | | | | | |/ _ \ '__| | | |
+| |_| | |_| |  __/ |  | |_| |
+ \__\_\\__,_|\___|_|   \__, |
+                       |___/ 
+
+*/
+--Alinea a)
+select distinct location.local
+from location, animais
+where location.registo = animais.registo and 
+      animais.classe = 'aves'
+
+--Alinea b)
+select distinct location.local
+from location, animais
+where location.registo = animais.registo 
+
+except
+
+select distinct location.local
+from location, animais
+where location.registo = animais.registo and 
+      animais.ordem = 'carnívoros'
+
+--alinea c)
+
+--Se considerarmos os meios irmãos (com no minimo um pai em comum)
+with values (parents) as (select parentesco.registoP
+                    from animais, parentesco
+                    where animais.registo = parentesco.registo and
+                          animais.nome = 'Kilu')
+
+select distinct animais.nome
+from values, animais, parentesco
+where values.parents = parentesco.registoP and
+      parentesco.registo = animais.registo
+except
+select animais.nome
+from animais
+where animais.nome = 'Kilu'
+
+--Se considerarmos irmãos diretos (estritamente mesmo pai e mesma mãe)
+select nome
+from animais as n
+where not exists( 
+                    select parentesco.registoP
+                    from animais, parentesco
+                    where animais.registo = parentesco.registo and
+                          animais.nome = 'Kilu'
+                    except 
+                    select parentesco.registoP
+                    from animais, parentesco
+                    where animais.registo = parentesco.registo and
+                          parentesco.registo = n.registo)
+except
+select animais.nome
+from animais
+where animais.nome = 'Kilu'
+
+
+--alinea d)
+
+select numeroFunc.telefone
+from numeroFunc, resp1, animais
+where numeroFunc.NIF = resp1.NIF and
+      resp1.registo = animais.registo and
+      animais.nome = 'Kata' 
+
+--alinea e)
+
+with values(nif) as(select distinct resp2.NIF
+                    from resp2, location, animais, temresponsável
+                    where resp2.local = location.local and
+                    location.registo = animais.registo and
+                    animais.nome = 'Kata')
+
+select numeroFunc.telefone
+from numeroFunc, temresponsável, values
+where temresponsável.subordinadoNIF = values.NIF and
+      numeroFunc.NIF = temresponsável.superiorNIF
+
+
+-- alinea f)
+select consulta.data, consulta.tratamento
+from consulta, animais
+where consulta.registo = animais.registo and
+      animais.nome = 'Malii'
+except
+select consulta.data, consulta.tratamento
+from consulta
+where consulta.tratamento = ''
+
+--alinea g)
+select distinct funcionarios.nome
+from funcionarios, consulta, animais
+where funcionarios.NIF = consulta.NIF and
+      consulta.registo = animais.registo and
+      animais.ordem = 'carnívoros' and
+      consulta.diagonostico = 'grávida'
+
+--alinea h)
+select animais.familia, count(animais.registo)
+from animais 
+where animais.ordem = 'artiodáctilos' 
+group by animais.familia
+
+--alinea i)
+
+with values(brother, sexo, parents, registoP) as (select a1.nome, a1.sexo , a2.nome, a2.registo
+                                    from animais as a1, animais as a2, parentesco
+                                    where a1.registo = parentesco.registo and
+                                          a2.registo = parentesco.registoP),
+                                          
+
+brothers(male, female) as (select a.brother , b.brother
+                                from values as a, values as b, animais
+                                where a.registoP = b.registoP and
+                                      a.sexo = 'masculino' and
+                                      b.sexo = 'feminino'
+                                except
+                                select a.brother , b.brother
+                                from values as a, values as b
+                                where a.brother = b.brother)
+                                                                
+                                                            
+
+select a1.nome, a2.nome
+from animais as a1, animais as a2
+where a1.sexo = 'masculino' and a2.sexo = 'feminino'and
+      a1.especie = a2.especie
+except 
+select * from brothers
+except 
+select brother, parents from values
+except
+select parents, brother from values
+
+--alinea j)
+with values(ordem, n) as (select ordem, count(registo)
+                          from animais
+                          group by ordem)
+select ordem
+from (select max(n) as n from values) as r, values
+where r.n = values.n
+
+--alinea k)
+
+with values(ordem, n) as (select animais.ordem, count(consulta.NIF)
+                         from animais, consulta
+                         where animais.registo = consulta.registo
+                         group by animais.ordem)
+select ordem
+from values
+where 5 <= values.n
+
+--alinea l)
+select count(registo) from cativeiro
+
+--alinea m)
+select nome, especie
+from (select max(idade) as n from animais) as r, animais
+where r.n = animais.idade
+
+
+--alinea n)
+with values(local, n) as (select spaces.local, count(animais.registo)
+                         from spaces,animais, location
+                         where spaces.local = location.local and
+                               location.registo = animais.registo and
+                               animais.classe = 'mamíferos' and
+                               spaces.humidade = 'húmida'
+                               group by(spaces.local))
+                               
+select local
+from (select max(n) as n from values) as r, values
+where r.n = values.n
+
+--alinea o)
+select funcionarios.nome, count(animais.registo)
+from funcionarios, resp1, animais
+where funcionarios.NIF = resp1.NIF and
+      resp1.registo = animais.registo and
+      animais.classe = 'mamíferos'
+      group by(funcionarios.nome)  
+
+--alinea p)
+select nome
+from animais as n
+where not exists( 
+                    select distinct consulta.NIF
+                    from consulta
+                    except 
+                    select distinct consulta.NIF
+                    from consulta
+                    where consulta.registo = n.registo)

@@ -1,0 +1,331 @@
+--animais
+--------------------------------------------------------------------------------------------------------------
+--7 tigres
+insert into animais values
+                    ('Taji' , 'masculino' , 123456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 7),
+                    ('Malii', 'feminino' , 222456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 7),
+                    ('Aka', 'feminino' , 322456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 16),
+                    ('TaTa', 'masculino' , 422456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 15),
+                    ('Cáta', 'masculino' , 432456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 17),
+                    ('Kata', 'feminino' , 522456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 14),
+                    ('Mata', 'masculino' , 622456 , 'mamíferos', 'felinos', 'tigre', 'carnívoros', 13);
+
+
+insert into capturado values
+                    ('India, Agra' , '2015' , '2014', 123456),
+                    ('India, Deli' , '2015' , '2014', 222456),
+                    ('India, Calcutá' , '01/01/2005' , '01/09/2004' , 432456);
+
+insert into cativeiro values
+                    (322456, '12/12/2005'),
+                    (422456, '20/01/2006'),
+                    (522456, '02/03/2007'),
+                    (622456, '02/02/2008');
+
+insert into parentesco values
+                    (322456, 123456),
+                    (322456, 222456),
+                    (422456, 123456),
+                    (422456, 222456),
+                    (522456, 432456),
+                    (522456, 422456),
+                    (622456, 522456),
+                    (622456, 123456);
+
+--------------------------------------------------------------------------------------------------------------
+--3 hipopótamos
+
+insert into animais values
+                    ('Hipo', 'masculino', 123444, 'mamíferos', 'hipopótamo comum', 'hipopótamos', 'artiodáctilos', 18),
+                    ('Tapi', 'feminino', 223444, 'mamíferos', 'hipopótamo comum', 'hipopótamos', 'artiodáctilos', 18),
+                    ('Hita', 'feminino', 323444, 'mamíferos', 'hipopótamo comum', 'hipopótamos', 'artiodáctilos', 15);
+                    
+insert into capturado values
+                    ('India, Agra' , '06/06/2004' , '06/06/2003', 123444),
+                    ('India, Deli' , '06/06/2004' , '06/12/2003', 223444);
+
+insert into cativeiro values
+                    (323444, '01/09/2006');
+
+insert into parentesco values
+                    (323444, 223444),
+                    (323444, 123444);
+
+
+--------------------------------------------------------------------------------------------------------------
+--5 veados
+insert into animais values
+                    ('Kaki' , 'masculino' , 123666 , 'mamíferos', 'veados', 'cervídeos', 'artiodáctilos', 4),
+                    ('Kalu' , 'feminino' , 223666 , 'mamíferos', 'veados', 'cervídeos', 'artiodáctilos', 4),
+                    ('Kilu' , 'feminino' , 323666 , 'mamíferos', 'veados', 'cervídeos', 'artiodáctilos', 13),
+                    ('Luka' , 'feminino' , 423666 , 'mamíferos', 'veados', 'cervídeos', 'artiodáctilos', 3),
+                    ('Kuli' , 'feminino' , 524666 , 'mamíferos', 'veados', 'cervídeos', 'artiodáctilos', 13);
+                
+insert into capturado values
+                    ('Europa, Pirenéus' , '2017' , '2017', 123666),
+                    ('Europa, Ourense' , '2017' , '2017', 223666),
+                    ('Europa, Gerês' , '2018' , '2018', 423666);
+
+insert into cativeiro values
+                    (323666, '03/04/2008'),
+                    (524666, '04/03/2008');
+
+insert into parentesco values
+                    (323666 , 223666),
+                    (323666 , 123666),
+                    (524666 , 423666),
+                    (524666 , 123666);
+
+
+--------------------------------------------------------------------------------------------------------------
+--6 araras
+insert into animais values
+                    ('Ará' , 'masculino' , 123555 , 'aves', 'arara-azul-pequena', 'psittacidae', 'psittaciformes', 4),
+                    ('Zará' , 'masculino' , 133555 , 'aves', 'arara-azul-pequena', 'psittacidae', 'psittaciformes', 4),
+                    ('Rará' , 'feminino' , 223555 , 'aves', 'arara-azul-pequena', 'psittacidae', 'psittaciformes', 3),
+                    ('Rara' , 'masculino' , 323555 , 'aves', 'arara-azul-pequena', 'psittacidae', 'psittaciformes', 2),
+                    ('Zula' , 'feminino' , 423555 , 'aves', 'arara-azul-pequena', 'psittacidae', 'psittaciformes', 2),
+                    ('Zura' , 'feminino' , 523555 , 'aves', 'arara-azul-pequena', 'psittacidae', 'psittaciformes', 2);
+
+
+insert into capturado values
+                    ('Europa, Pirenéus' , '2017' , '2017', 123555),
+                    ('Europa, Ourense' , '2017' , '2017', 133555),
+                    ('Europa, Gerês' , '2018' , '2018', 223555);
+
+insert into cativeiro values
+                    (323555, '07/05/2009'),
+                    (423555, '07/05/2009'),
+                    (523555, '07/05/2009');
+
+insert into parentesco values
+                    (323555 , 123555),
+                    (323555 , 223555),
+                    (423555 , 123555),
+                    (423555 , 223555),
+                    (523555 , 123555),
+                    (523555 , 223555);
+
+--------------------------------------------------------------------------------------------------------------
+--Espaços
+--------------------------------------------------------------------------------------------------------------
+--Tabela Spaces
+insert into spaces values
+                   (1200 , 'A3' , 'terrestre', 'quente', 'húmida'),
+                   (1100 , 'A4' , 'terrestre', 'quente', 'húmida'),
+                   (1100 , 'A5' , 'terrestre', 'quente', 'seca'),
+                   (2000 , 'A1' , 'misto', 'quente', 'seca'),
+                   (1500 , 'A2' , 'terrestre', 'fria', 'seca'),
+                   (500, 'A6' , 'terrestre', 'quente', 'húmida');
+
+--location(local, registo)
+insert into location values
+                ('A3' , 123456),          
+                ('A3' , 222456), 
+                ('A3' , 322456), 
+                ('A4' , 422456),
+                ('A4' , 622456), 
+                ('A5' , 432456),    
+                ('A5' , 522456), 
+                ('A1' , 123444),    
+                ('A1' , 223444), 
+                ('A1' , 323444),
+                ('A2' , 123666),
+                ('A2' , 223666),
+                ('A2' , 323666),  
+                ('A2' , 423666),    
+                ('A2' , 524666),     
+                ('A6' , 123555),     
+                ('A6' , 133555),
+                ('A6' , 223555), 
+                ('A6' , 323555),
+                ('A6' , 423555),
+                ('A6' , 523555); 
+
+--Tabela Resp2
+insert into resp2 values
+		(123123126, 'A3'),
+            (123123126, 'A4'),
+            (123123126, 'A5'),
+            (123123127, 'A1'),
+            (123123128, 'A2'),
+            (123123128, 'A6');     
+
+--Tabela Local
+insert into local values
+			('A3', '12/08/2005', '7:00', 222456, 123123131),
+                  ('A3', '12/09/2005', '7:30', 222456, 123123131),
+         		('A3', '12/12/2005', '8:00', 222456, 123123131),
+                  ('A3', '12/07/2006', '9:11',222456, 123123131),            
+            	('A2', '12/05/2009', '9:45', 123666, 123123131),              
+            	('A6', '12/05/2009','16:02', 123555, 123123131), 
+            	('A6', '12/05/2009', '13:20', 423555, 123123131),
+           	      ('A1', '12/08/2007', '17:17', 223444, 123123131), 
+                  ('A1', '12/07/2006', '18:00', 223444, 123123131),
+            	('A1', '12/09/2006', '18:40', 223444, 123123132),
+            	('A1', '12/07/2007', '19:13', 223444, 123123132),
+            	('A1', '12/07/2007', '20:00', 223444, 123123132),
+            	('A1', '12/09/2007', '20:24', 223444, 123123132),
+            	('A5', '12/09/2006', '21:15', 223555, 123123132);
+
+
+
+--------------------------------------------------------------------------------------------------------------
+--Funcionários
+--------------------------------------------------------------------------------------------------------------
+--funcionarios(NIF, nome, inicio)
+insert into funcionarios values
+             (123123123 , 'Joaquim Silva', '01/02/2003'),
+             (123123124 , 'Manuel Santos', '01/04/2003'),
+             (123123125 , 'Maria Gomes', '01/01/2003'),
+             (123123126 , 'Mariana Silva', '01/02/2004'),
+             (123123127 , 'Jorge Gomes', '01/03/2004'),
+             (123123128 , 'Fracisco Jorge', '01/03/2004'),
+             (123123129 , 'Manuel Ferreira', '01/02/2004'),
+             (123123130 , 'Manuela Torres', '01/04/2004'),
+             (123123131 , 'Pedro Vale', '01/05/2004'),
+             (123123132 , 'Isabel Soares', '01/06/2004');
+
+
+-- numeroFunc(telefone, NIF)
+insert into numeroFunc values
+                    (919999999, 123123123),
+                    (266787809, 123123123),
+                    (919999998, 123123124),
+                    (266787808, 123123124),
+                    (919999997, 123123125),
+                    (266787807, 123123125),
+                    (919999996, 123123126),
+                    (266787806, 123123126),
+                    (919999995, 123123127),
+                    (266787807, 123123127),
+                    (919999994, 123123128),
+                    (266787806, 123123128),
+                    (919999996, 123123129),
+                    (266787806, 123123129),
+                    (919999996, 123123130),
+                    (266787806, 123123130),
+                    (919999986, 123123131),
+                    (266787816, 123123131),
+                    (919999976, 123123132),
+                    (266787826, 123123132);
+
+-- administrativo(NIF)
+insert into administrativo values
+                    (123123129),
+                    (123123130);
+                    
+
+--tratadorResp(NIF)
+insert into tratadorResp values(123123123),
+                               (123123124),
+                               (123123125);
+                        
+
+--Tratador Auxiliar
+insert into tratadorAuxiliar values(123123126),
+                                   (123123127),
+                                   (123123128);
+
+
+--veterinario(NIF) 
+insert into veterinario values
+             (123123131),
+	       (123123132);
+
+
+--Valores da tabela Resp1
+--Animais do Joaquim Silva
+insert into resp1 (NIF , registo)
+select '123123123', animais.registo
+from animais
+where animais.nome = 'Taji' or
+      animais.nome = 'Malii' or
+      animais.nome = 'Aka' or
+      animais.nome = 'TaTa' or
+      animais.nome = 'Cáta' or
+      animais.nome = 'Kata' or
+      animais.nome = 'Mata'
+
+--Animais do Manuel Santos
+insert into resp1 (NIF , registo)
+select '123123124', animais.registo
+from animais
+where animais.nome = 'Hipo' or
+      animais.nome = 'Tapi' or
+      animais.nome = 'Hita' or
+      animais.nome = 'Kaki' or
+      animais.nome = 'Kalu' or
+      animais.nome = 'Kilu' or
+      animais.nome = 'Luka' or
+      animais.nome = 'Kuli' 
+
+--Animais do Maria Gomes
+insert into resp1 (NIF , registo)
+select '123123125', animais.registo
+from animais
+where animais.nome = 'Ará' or
+      animais.nome = 'Zará' or
+      animais.nome = 'Rará' or
+      animais.nome = 'Rara' or
+      animais.nome = 'Zula' or
+      animais.nome = 'Zura' 
+
+
+--temResponsável(superiorNIF, subordinadoNIF) 
+insert into temResponsável values
+          (123123125 , 123123123),
+          (123123125 , 123123124),
+          (123123130 , 123123125),
+          (123123130 , 123123126),
+          (123123130 , 123123127),
+          (123123130 , 123123128),
+          (123123130 , 123123129),
+          (123123129 , 123123130),
+          (123123130 , 123123131),
+          (123123131 , 123123132);
+
+
+--Tabela Vet
+
+insert into vet(NIF, registo, data, hora)
+select consulta.NIF, consulta.registo, consulta.data, consulta.hora
+from consulta
+
+
+--------------------------------------------------------------------------------------------------------------
+--Consulta
+--------------------------------------------------------------------------------------------------------------
+--Tabela Consulta
+insert into consulta values(123123131 , '12/08/2005', '7:00', 222456, 'grávida','', 'A3'),
+                           (123123131 , '12/09/2005', '7:30', 222456, '','cálcio injectado', 'A3'),
+                           (123123131 , '12/12/2005', '8:00', 222456, '','parto', 'A3'),
+                           (123123131 , '12/07/2006', '9:11', 222456, 'infecção','antibiótico injectado', 'A3'),
+                           (123123131 , '12/05/2009', '9:45', 123666, 'infecção','antibiótico injectado', 'A2'),
+                           (123123131 , '12/05/2009', '16:02', 123555, 'infecção','antibiótico injectado', 'A6'),
+                           (123123131 , '12/05/2009', '13:20', 423555, 'infecção','antibiótico injectado', 'A6'),
+                           (123123131 , '12/08/2007', '17:17', 223444, 'infecção','antibiótico injectado', 'A1'),
+                           (123123132, '12/07/2006','18:00',223444, 'grávida', 'cálcio injectado', 'A1'),
+                           (123123132, '12/09/2006','18:40',223444, 'parto', '','A1'),
+                           (123123132, '12/07/2007','19:13',223444, 'infecção', 'antibiótico injectado', 'A1'),
+			         (123123132, '12/07/2007','20:00',223444, 'grávida', 'cálcio injectado','A1'),    
+                           (123123132, '12/09/2007','20:24',223444, 'parto', '', 'A1'),
+                           (123123132, '12/06/2006','21:15',423555, 'infecção', 'antibiótico injectado', 'A5');
+
+
+--Tabela Animal
+INSERT into animal values
+		(222456, '12/08/2005 7:00'),
+            (222456, '12/09/2005 7:30'),
+         	(222456, '12/12/2005 8:00'),
+            (222456, '12/07/2006 9:11'),            
+            (123666, '12/05/2009 9:45'),              
+            (123555, '12/05/2009 16:02'), 
+            (423555, '12/05/2009 13:20'),
+           	(223444, '12/08/2007 17:17'), 
+            (223444, '12/07/2006 18:00'),
+            (223444, '12/09/2006 18:40'),
+            (223444, '12/07/2007 19:13'),
+            (223444, '12/07/2007 20:00'),
+            (223444, '12/09/2007 20:24'),
+            (223555,'12/09/2006 21:15');
