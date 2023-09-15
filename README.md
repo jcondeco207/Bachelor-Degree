@@ -67,7 +67,8 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 
 | Título | Cadeira | Ano | Semestre | Linguagens Usadas | Nota |
 |:-------|:--------|:---:|:---------|:------------------|:----:|
-| [Minesweeper](/first_year/p1/Minesweeper/) | Programação 1 | 1º | 1º | ![Tools](https://skillicons.dev/icons?i=c) | 19 |
+| [Minesweeper](/first_year/p1/Minesweeper/) | Programação 1 | 1º | 1º | ![Tools](https://skillicons.dev/icons?i=c) | 19   |
+| [Keyboard](/first_year/dsa1/Keyboard/)     | E.D.A. 1      | 1º | 2º | ![Tools](https://skillicons.dev/icons?i=c) | 18.8 |
 
 ## Works | Trabalhos
 
