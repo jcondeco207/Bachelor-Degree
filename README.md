@@ -29,7 +29,7 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | [Programação 2](/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=java)  | 19 |
 | [Bases de Dados](/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=postgres)  | 14 |
 | [Arquitetura de Computadores 2](/)       | 2021/2022 | 1º       | | 13 |
-| [Computação Gráfica](/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=js,html,css,svg)  | 13 |
+| [Computação Gráfica](/second_year/cg/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=js,html,css,svg)  | 13 |
 | Álgebra Linear e Geometria Analítica | 2021/2022 | 1º       |   | 10 |
 | Análise Matemática 1 | 2021/2022 | 2º |  | 11 |
 | [Redes de Computadores]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |

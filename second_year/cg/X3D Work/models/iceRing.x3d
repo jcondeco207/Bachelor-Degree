@@ -1,0 +1,50 @@
+<x3d width="1000px" height="600px">
+    <scene>
+        <transform translation="0 0.09 0">
+            <shape>
+                    <appearance>
+                        <twosidedmaterial diffuseColor="#b3f9ff"></twosidedmaterial>
+                    </appearance>
+                    <box size="8 0.1 8"></box>
+            </shape>
+        </transform>
+
+        <transform>
+                <shape DEF="grade">
+                    <appearance>
+                        <twosidedmaterial diffuseColor="black"></twosidedmaterial>
+                    </appearance>
+                    <indexedfaceset id="one"
+                        coordIndex=" 
+                            0 1 5 4 -1
+                            2 6 7 3 -1
+                            1 2 6 5 -1
+                            0 4 7 3 -1
+                            ">
+                            
+                        <coordinate point="
+                            4.01 0 -4.01
+                            -4.01 0 -4.01
+                            -4.01 0 4.01
+                            4.01 0 4.01
+                            4.01 0.3 -4.01
+                            -4.01 0.3 -4.01
+                            -4.01 0.3 4.01
+                            4.01 0.3 4.01
+                            ">
+                        </coordinate>
+                    </indexedfaceset>
+                </shape>
+        </transform>
+
+        <transform translation="0 0.2 0"> 
+                <shape USE="grade">
+                    <appearance>
+                        <twosidedmaterial diffuseColor="red"></twosidedmaterial>
+                    </appearance>
+                </shape>
+            </transform>
+
+    </scene>
+
+</x3d>

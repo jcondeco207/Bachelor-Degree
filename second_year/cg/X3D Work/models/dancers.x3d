@@ -1,0 +1,61 @@
+<x3d width="1000px" height="600px">
+    <scene>
+        <transform translation="0 1 0">
+                <shape DEF="shoe">
+                    <appearance>
+                        <twosidedmaterial diffuseColor="#007bff"></twosidedmaterial>
+                    </appearance>
+                    <indexedfaceset
+                        coordIndex=" 
+                            5 4 3 2 1 0 -1
+                            0 1 7 6 -1
+                            2 3 7 1 -1
+                            5 6 7 8 -1
+                            4 8 7 3 -1
+                            4 5 8 -1
+                            ">
+                        <coordinate point="
+                            0.2 0 0.1
+                            0.25 0 0
+                            0.2 0 -0.1
+                            0.1 0 -0.1
+                            -0.2 0 -0.1
+                            -0.2 0 0.1
+                            0.1 0 0.1
+                            0.1 0.15 0
+                            -0.2 0.15 0
+                            ">
+                        </coordinate>
+                    </indexedfaceset>
+                </shape>
+
+                <shape DEF="blade">
+                    <appearance>
+                        <twosidedmaterial diffuseColor="#ffffff"></twosidedmaterial>
+                    </appearance>
+                    <indexedfaceset
+                        coordIndex=" 
+                            0 1 2 3 -1
+                            1 0 4 5 -1
+                            4 5 6 7 -1
+                            2 3 7 6 -1
+                            4 0 3 7 -1
+                            ">
+                        <coordinate point="
+                            0.2 -0.1  0.03
+                            0.24 0 0.03
+                            -0.2 0 0.03
+                            -0.2 -0.1 0.03
+
+                            0.2 -0.1  -0.03
+                            0.24 0 -0.03
+                            -0.2 0 -0.03
+                            -0.2 -0.1 -0.03
+                            ">
+                        </coordinate>
+                    </indexedfaceset>
+                </shape>
+        </transform>
+    </scene>
+
+</x3d>
