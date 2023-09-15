@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manager</title>
+  <link rel="stylesheet" href="lib/stylesheet.css">
+  <script src="lib/functions.js"></script>
+  <script src="lib/alasql.min.js"></script>
+</head>
+<body>
+<div class="topBar">
+
+  <h1 style="flex: 0.8; text-align: left"><img src="media/house-solid.svg" style="height: 1em" alt=""> <span id="title">Room Rent</span></h1>
+  <div class="navigation">
+    <a class="topBtn" id="topBtn1" href="index.html">Home</a>
+    <a class="topBtn" id="topBtn2" href="Anuncios.html">Anúncios</a>
+    <a class="topBtn" id="topBtn3" href="Add.html"><img id="plus" src="media/plus-solid.svg" alt="+" style="height: 1em"></a>
+  </div>
+</div>
+
+<div id="toAdd">
+  <!--<div class="modal">
+    <h1>Anúncio 145</h1>
+    <img src="media/índice.jpg" class="modalPic">
+    <p>Mushroom Kingdom is an awesome place to live in. As long as you can jump you'll be happy. Random Bowser attacks.</p>
+    <button class="modalBtn">Alterar estado</button>
+  </div>-->
+</div>
+
+<div class="main" id="main">
+    <div class="table" id="table">
+      <div class="tableRow">
+        <p class="idCol">ID</p>
+        <p class="stateCol">Estado</p>
+        <p style="flex: 0.2">Ver anúncio</p>
+      </div>
+    </div>
+</div>
+
+
+
+<footer>
+  <img src="media/cdnlogo.com_asus-rog-1.svg" alt="asus">
+  <img src="media/apple.svg" alt="apple">
+  <div class="credios">
+    <p>Crédito</p>
+    <p><a class="contact" href="https://www.linkedin.com/in/diogo-mestre-26ab09253">Diogo Mestre <img
+            src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a> & <a class="contact"
+                                                                                   href="https://www.linkedin.com/in/joão-condeço">João
+      Condeço <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a></p>
+  </div>
+  <img src="media/neei.svg" alt="neei">
+  <img src="media/jetbrains.svg" alt="jetbrains">
+</footer>
+<script>
+  alasql("create table adds (tipo STRING, data Date, genero STRING, detalhes STRING, contacto STRING, anunciante STRING, aid INT, zona STRING, tipo_alojamento STRING, preco INT, ativo BOOLEAN)");
+  manageData();
+</script>
+</body>
+</html>

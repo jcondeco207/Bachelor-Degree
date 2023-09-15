@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novo Anúncio</title>
+    <link rel="stylesheet" href="lib/stylesheet.css">
+    <script src="lib/functions.js"></script>
+    <script src="lib/jquery-3.6.1.js"></script>
+</head>
+<body>
+<!--<script>sliderSetup();</script>-->
+<div class="topBar">
+
+    <h1 style="flex: 0.8; text-align: left"><img src="media/house-solid.svg" style="height: 1em"> <span id="title">Room Rent</span>
+    </h1>
+    <div class="navigation">
+        <a class="topBtn" id="topBtn1" href="index.html">Home</a>
+        <a class="topBtn" id="topBtn2" href="Anuncios.html">Anúncios</a>
+        <a class="topBtn" id="topBtn3" href="Add.html"><img id="plus" src="media/plus-solid.svg" alt="+"
+                                                            style="height: 1em"></a>
+    </div>
+</div>
+
+<div class="main">
+    <form id="newAid" name="newAid">
+        <div id="formContainer">
+            <p>Novo Anúncio</p>
+            <div class="rowForm">
+                <select class="advancedSearchBar" name="tipo" id="typeAdd" required>
+                    <option value="">Escolha o tipo de anúncio</option>
+                    <option value="oferta">Oferta</option>
+                    <option value="procura">Procura</option>
+                </select>
+
+                <select class="advancedSearchBar" name="genero" id="gender" required>
+                    <option value="">Género</option>
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="misto">Misto</option>
+                </select>
+            </div>
+
+            <input type="text" name="anunciante" maxlength="40" class="advancedSearchBar" value=""
+                   placeholder="Anunciante...">
+            <input type="text" name="zona" maxlength="40" class="advancedSearchBar" value="" placeholder="Zona...">
+
+            <div class="rowForm">
+                <select class="advancedSearchBar" name="tipo_alojamento" id="typology" required>
+                    <option value="">Escolha o tipo de alojamento</option>
+                    <option value="T1">T1</option>
+                    <option value="T2">T2</option>
+                    <option value="T3">T3</option>
+                    <option value="T4">T4</option>
+                    <option value="T5">T5</option>
+                    <option value="<T5">T+</option>
+                </select>
+
+                <input type="number" name="contacto" maxlength="12" class="advancedSearchBar" value=""
+                       placeholder="Contacto...">
+            </div>
+
+            <div>
+                <p style="margin-right: 1em">Preço máximo</p>
+                <input type="range" min="0" max="5000" value="0" class="pbar" id="ranger">
+                <p id="maxPrice">0€</p>
+            </div>
+
+            <textarea class="advancedSearchBar" name="detalhes" rows="8" maxlength="300"
+                      placeholder="No more than 300 characters long"></textarea>
+
+            <div class="rowForm" id="btnFormRow">
+                <button id="submit" class="formBtn" type="submit">Submit</button>
+                <button id="reset" class="formBtn" type="reset" value="Start over">Reset</button>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+<footer>
+    <img src="media/cdnlogo.com_asus-rog-1.svg" alt="asus">
+    <img src="media/apple.svg" alt="apple">
+    <div class="credios">
+        <p>Crédito</p>
+        <p><a class="contact" href="https://www.linkedin.com/in/diogo-mestre-26ab09253">Diogo Mestre <img
+                src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a> & <a class="contact"
+                                                                                       href="https://www.linkedin.com/in/joão-condeço">João
+            Condeço <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a></p>
+    </div>
+    <img src="media/neei.svg" alt="neei">
+    <img src="media/jetbrains.svg" alt="jetbrains">
+</footer>
+<script>
+    submitAid()
+    sliderSetup()
+</script>
+</body>
+</html>

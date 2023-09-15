@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anúncios</title>
+    <link rel="stylesheet" href="lib/stylesheet.css">
+    <script src="lib/functions.js"></script>
+    <script src="lib/alasql.min.js"></script>
+
+    <style>
+        .vl {
+            border-left: 1.5px solid rgba(159, 179, 203, 0.9);
+            height: 75%;
+            margin-inline: 0.4em;
+            border-radius: 5px;
+
+        }
+    </style>
+</head>
+<body>
+<div class="topBar">
+    <h1 style="flex: 0.8; text-align: left"><img src="media/house-solid.svg" style="height: 1em" alt=""> <span id="title">Room Rent</span></h1>
+    <div class="navigation">
+        <a class="topBtn" id="topBtn1" href="index.html">Home</a>
+        <a class="topBtn" id="topBtn2" href="Anuncios.html">Anúncios</a>
+        <a class="topBtn" id="topBtn3" href="Add.html"><img id="plus" src="media/plus-solid.svg" alt="+" style="height: 1em"></a>
+    </div>
+</div>
+
+<div class="main">
+    <form onsubmit="return getData(this);">
+
+        <div id="advancedSearch">
+            <div id="toHide">
+                <p>Pesquisa Avançada</p>
+
+
+                <div class="row">
+                    <input id="seller" class="advancedSearchBar" type="text" placeholder="Vendedor...">
+                </div>
+
+                <div class="row">
+                    <input id="zona" class="advancedSearchBar" type="text" placeholder="Zona...">
+                </div>
+
+                <div>
+                    <p style="margin-right: 1em">Preço máximo</p>
+                    <input type="range" min="0" max="5000" value="0" class="pbar" id="ranger">
+                    <p id="maxPrice">0€</p>
+                </div>
+
+            </div>
+
+
+            <div class="row" id="searchbar">
+                <select class="typePick" name="tipo" id="type" required style="background-color: transparent; box-shadow: none; color: white; margin-right: 0.5em; max-width: 20%" >
+                    <option value="">Escolha o tipo de anúncio</option>
+                    <option value="oferta">Oferta</option>
+                    <option value="procura">Procura</option>
+                </select>
+                <div class="vl"></div>
+                <input name="detalhes" id="detalhes" class="bar" type="text" placeholder="Procurar anúncios...">
+                <button id="BTSearch" type="submit"><img src="media/magnifying-glass-solid.svg" alt="Search"></button>
+                <button id="BTFilter" type="button" onclick="showAdvancedSearch()"><img id="filter"
+                                                                                        src="media/filter-solid.svg"
+                                                                                        alt="Filter"></button>
+            </div>
+        </div>
+
+    </form>
+    <div class="buttonRow">
+        <button class="picBtn" onclick="changePage(-1)"><img src="media/arrow-left-solid.svg" style="height: 4em" alt="<-"></button>
+        <div class="aidRow" id="searchResults"></div>
+        <button class="picBtn" onclick="changePage(1)"><img src="media/arrow-right-solid.svg" style="height: 4em" alt="->"></button>
+    </div>
+
+
+</div>
+
+<footer>
+    <img src="media/cdnlogo.com_asus-rog-1.svg" alt="asus">
+    <img src="media/apple.svg" alt="apple">
+    <div class="credios">
+        <p>Crédito</p>
+        <p><a class="contact" href="https://www.linkedin.com/in/diogo-mestre-26ab09253">Diogo Mestre <img
+                src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a> & <a class="contact"
+                                                                                       href="https://www.linkedin.com/in/joão-condeço">João
+            Condeço <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a></p>
+    </div>
+    <img src="media/neei.svg" alt="neei">
+    <img src="media/jetbrains.svg" alt="jetbrains">
+</footer>
+<script>
+    alasql("create table adds (tipo STRING, data Date, genero STRING, detalhes STRING, contacto STRING, anunciante STRING, aid INT, zona STRING, tipo_alojamento STRING, preco INT, ativo BOOLEAN)");
+</script>
+</body>
+</html>

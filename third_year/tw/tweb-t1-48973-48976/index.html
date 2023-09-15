@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Rent</title>
+    <link rel="stylesheet" href="lib/stylesheet.css">
+    <script src="lib/functions.js"></script>
+    <script src="lib/alasql.min.js"></script>
+</head>
+<body>
+<div class="topBar">
+
+    <h1 style="flex: 0.8; text-align: left"><img src="media/house-solid.svg" style="height: 1em"> <span id="title">Room Rent</span></h1>
+    <div class="navigation">
+        <a class="topBtn" id="topBtn1" href="index.html">Home</a>
+        <a class="topBtn" id="topBtn2" href="Anuncios.html">Anúncios</a>
+        <a class="topBtn" id="topBtn3" href="Add.html"><img id="plus" src="media/plus-solid.svg" alt="+" style="height: 1em"></a>
+        <a class="topBtn" id="topBtn4" href="Manager.html"><img id="settings" src="media/screwdriver-wrench-solid.svg" alt="Settings" style="height: 1em"></a>
+    </div>
+</div>
+
+<div class="main">
+    <h2>Top 3 Anúncios de Procura</h2>
+    <hr>
+    <div class="aidRow" id="procuraRow"></div>
+
+    <h2>Top 3 Anúncios de Oferta</h2>
+    <hr>
+    <div class="aidRow" id="ofertaRow"></div>
+</div>
+
+<footer>
+    <img src="media/cdnlogo.com_asus-rog-1.svg" alt="asus">
+    <img src="media/apple.svg" alt="apple">
+    <div class="credios">
+        <p>Crédito</p>
+        <p><a class="contact" href="https://www.linkedin.com/in/diogo-mestre-26ab09253">Diogo Mestre <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a> & <a class="contact" href="https://www.linkedin.com/in/joão-condeço">João Condeço <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a></p>
+    </div>
+
+    <img src="media/neei.svg" alt="neei">
+    <img src="media/jetbrains.svg" alt="jetbrains">
+</footer>
+
+<script>
+    alasql("create table adds (tipo STRING, data Date, genero STRING, detalhes STRING, contacto STRING, anunciante STRING, aid INT, zona STRING, tipo_alojamento STRING, preco INT, ativo BOOLEAN)");
+    getTop6("procura");
+    getTop6("oferta");
+</script>
+</body>
+</html>

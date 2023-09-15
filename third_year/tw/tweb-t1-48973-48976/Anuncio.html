@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anúncio</title>
+  <link rel="stylesheet" href="lib/stylesheet.css">
+  <script src="lib/functions.js"></script>
+  <script src="lib/jquery-3.6.1.js"></script>
+</head>
+<body>
+<div class="topBar">
+
+  <h1 style="flex: 0.8; text-align: left"><img src="media/house-solid.svg" style="height: 1em"> <span id="title">Room Rent</span></h1>
+  <div class="navigation">
+    <a class="topBtn" id="topBtn1" href="index.html">Home</a>
+    <a class="topBtn" id="topBtn2" href="Anuncios.html">Anúncios</a>
+    <a class="topBtn" id="topBtn3" href="Add.html"><img id="plus" src="media/plus-solid.svg" alt="+" style="height: 1em"></a>
+  </div>
+</div>
+<div class="main">
+  <div id="anun_ecra">
+    <h2>Casa em Évora</h2>
+    <p id="detalhes" style="margin-bottom: 3em">Descrição:</p>
+    <div class="row" id="messageForm">
+
+        <div class="buttonRow1">
+          <button class="picBtn1" onclick="Slide(-1)"><img src="media/arrow-left-solid.svg" style="height: 4em"></button>
+          <img id="pic" src="media/índice.jpg" alt="casa">
+          <button class="picBtn1" onclick="Slide(1)"><img src="media/arrow-right-solid.svg" style="height: 4em"></button>
+        </div>
+
+
+      <div class="atr">
+        <p id="preco">Preço: </p>
+        <p id="anunciante">Nome do Anunciante: </p>
+        <p id="contacto">Contacto: </p>
+        <p id="zona">Zona(Localização): </p>
+        <p id="data">Data do Registo: </p>
+        <p id="genero">Género: </p>
+        <form id="form_msg" name="formMsg">
+          <input type="text" name="sender" maxlength="40" class="advancedSearchBar" value="" placeholder="From..." required>
+          <textarea name="msg" class="advancedSearchBar1" placeholder="Mensagem..." required></textarea>
+          <button id="submit" class="formBtn" type="submit">Submit</button>
+        </form>
+
+      </div>
+    </div>
+
+
+    </div>
+</div>
+<footer>
+  <img src="media/cdnlogo.com_asus-rog-1.svg" alt="asus">
+  <img src="media/apple.svg" alt="apple">
+  <div class="credios">
+    <p>Crédito</p>
+    <p><a class="contact" href="https://www.linkedin.com/in/diogo-mestre-26ab09253">Diogo Mestre <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a> & <a class="contact" href="https://www.linkedin.com/in/joão-condeço">João Condeço <img src="media/linkedin.svg" alt="linkedin" style="height: 1em;"></a></p>
+  </div>
+  <img src="media/neei.svg" alt="neei">
+  <img src="media/jetbrains.svg" alt="jetbrains">
+</footer>
+<script>sendMensage()</script>
+</body>
+
+<script>show(slideIndex);</script>
+</html>

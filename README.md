@@ -33,7 +33,7 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | Álgebra Linear e Geometria Analítica | 2021/2022 | 1º       |   | 10 |
 | Análise Matemática 1 | 2021/2022 | 2º |  | 11 |
 | [Redes de Computadores](/second_year/redes/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
-| [Sistemas Operativos](/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
+| [Sistemas Operativos](/second_year/so/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
 | [Autómatos e Linguagens de Programação]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=py) | 15 |
 | [Estruturas de Dados e Algoritmos 2](/second_year/eda2/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=java)  | 14 |
 | [Lógica e Computação]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=py)  | 13 |
