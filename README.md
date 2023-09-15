@@ -84,9 +84,9 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 (2022/2023)
 
 | Título | Cadeira | Ano | Semestre | Linguagens Usadas | Nota |
-|:-------|:--------|:---:|:---------|:------------------|:----:|
+|:-------|:--------|:---:|:---------:|:------------------|:----:|
 | [Room Rent RMI](/third_year/sd/sd-t01-48566-48976/) | S.D. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=java) | 16 |
 | [Room Rent REST](/third_year/sd/sd-t02-48566-48976/) | S.D. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=java,spring) | 13 | 
-| [Room Rent (No backend)](/third_year/tw/tweb-t1-48973-48976/) | TW | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=js,html,css) | 17 |
-| [Room Rent WebApp](/third_year/tw/tweb-t2-48973-48976/) | TW | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=js,html,css) ![Tools](https://skillicons.dev/icons?i=java,spring) | 16 |
+| [Room Rent (No backend)](/third_year/tw/tweb-t1-48973-48976/) | T.W. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=js,html,css) | 17 |
+| [Room Rent WebApp](/third_year/tw/tweb-t2-48973-48976/) | T.W. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=js,html,css) ![Tools](https://skillicons.dev/icons?i=java,spring) | 16 |
 
