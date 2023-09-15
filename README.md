@@ -51,7 +51,8 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | [Aprendizagem Automática](/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=py) | 13 |
 | [Metodologias de Desenvolvimento de Software](/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=java,git) ![Tools](https://skillicons.dev/icons?i=gitlab,github)| 12 |
 | Matemática Discreta       | 2022/2023 | 1º |  | 12 |
-| [Estágio](/)       | 2022/2023 | 2º       | ![Tools](https://skillicons.dev/icons?i=dotnet) | 18 |
+| Empreendedorismo e Inovação       | 2022/2023 | 2º |  | 18 |
+| [Estágio/Projeto](/)       | 2022/2023 | 2º       | ![Tools](https://skillicons.dev/icons?i=dotnet) | 18 |
 | [Inteligência Artificial](/)       | 2022/2023 | 2º       | Prolog | 13 |
 | [Segurança Informática](/)       | 2022/2023 | 2º| ![Tools](https://skillicons.dev/icons?i=py) | 16 |
 | [Sistemas Móveis e Aplicações](/)| 2022/2023 | 2º| ![Tools](https://skillicons.dev/icons?i=kotlin,androidstudio) | 18 |
