@@ -27,15 +27,15 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | Nome                                                        | Ano       | Semestre | Linguagens e Ferramentas Usadas| Nota |
 |:------------------------------------------------------------|:----------|:--------:|:-------------------------------|:----:| 
 | [Programação 2](/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=java)  | 19 |
-| [Bases de Dados](/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=postgres)  | 14 |
+| [Bases de Dados](/second_year/bd/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=postgres)  | 14 |
 | [Arquitetura de Computadores 2](/)       | 2021/2022 | 1º       | | 13 |
 | [Computação Gráfica](/second_year/cg/)       | 2021/2022 | 1º       | ![Tools](https://skillicons.dev/icons?i=js,html,css,svg)  | 13 |
 | Álgebra Linear e Geometria Analítica | 2021/2022 | 1º       |   | 10 |
 | Análise Matemática 1 | 2021/2022 | 2º |  | 11 |
-| [Redes de Computadores]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
-| [Sistemas Operativos]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
+| [Redes de Computadores](/second_year/redes/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
+| [Sistemas Operativos](/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=c)  | 15 |
 | [Autómatos e Linguagens de Programação]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=py) | 15 |
-| [Estruturas de Dados e Algoritmos 2]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=java)  | 14 |
+| [Estruturas de Dados e Algoritmos 2](/second_year/eda2/) | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=java)  | 14 |
 | [Lógica e Computação]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=py)  | 13 |
 | [Introdução à Investigação]() | 2021/2022 | 2º | ![Tools](https://skillicons.dev/icons?i=py)  | 16 |
 
@@ -47,7 +47,7 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 |:------------------------------------------------------------|:----------|:--------:|:-------------------------------|:----:| 
 | [Programação 3](/)       | 2022/2023 | 1º       | OCaml and Gnu Prolog | 11 |
 | [Tecnologias Web](/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=js,html,css) ![Tools](https://skillicons.dev/icons?i=spring,java) | 15 |
-| [Sistemas Distribuídos](/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=spring,java) | 12 |
+| [Sistemas Distribuídos](/third_year/sd/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=spring,java) | 12 |
 | [Aprendizagem Automática](/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=py) | 13 |
 | [Metodologias de Desenvolvimento de Software](/)       | 2022/2023 | 1º       | ![Tools](https://skillicons.dev/icons?i=java,git) ![Tools](https://skillicons.dev/icons?i=gitlab,github)| 12 |
 | Matemática Discreta       | 2022/2023 | 1º |  | 12 |
