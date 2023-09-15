@@ -16,7 +16,7 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | [Programação 1](/first_year/p1/)       | 2020/2021 | 1º       | ![Tools](https://skillicons.dev/icons?i=c)  | 18 |
 | Interação Pessoa Máquina| 2020/2021 | 1º       | | 13 |
 | [Sistemas Digitais](/)                | 2020/2021 | 1º       | Logisim | 15 |
-| [Estruturas de Dados e Algoritmos 1](/)                  | 2020/2021 | 2º    | ![Tools](https://skillicons.dev/icons?i=c) | 15 |
+| [Estruturas de Dados e Algoritmos 1](/first_year/dsa1/)                  | 2020/2021 | 2º    | ![Tools](https://skillicons.dev/icons?i=c) | 15 |
 | [Arquitetura de Computadores 1](/)                              | 2020/2021 | 2º       | Assembly (Arquitetura RISC-V)| 18 |
 | Física Geral 1                              | 2020/2021 | 2º       | | 13 |
 | Introdução à Probabilidade e Estatística                              | 2020/2021 | 2º       | | 11 |
