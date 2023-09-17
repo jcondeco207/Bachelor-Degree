@@ -90,6 +90,11 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | [O.S. Work 2](/second_year/so/S.O.%20Work%202/) | Sistemas Operativos | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 18   |
 | [One Text Chat V1.0](/second_year/redes/OneTextChat%20v1.0/) | Redes de Computadores | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 19.6 |
 | [One Text Chat V2.0](/second_year/redes/OneTextChat%20v2.0/) | Redes de Computadores | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 19.6 |
+| [Mosaics](/second_year/eda2/T1/) | E.D.A. 2 | 2º | 2º | ![Java](https://skillicons.dev/icons?i=java) | 13.8  |
+| [Hill The Climber](/second_year/eda2/T2/) | E.D.A. 2 | 2º | 2º | ![Java](https://skillicons.dev/icons?i=java) | 14.1 |
+| [Lost](/second_year/eda2/T3/) | E.D.A. 2 | 2º | 2º | ![Java](https://skillicons.dev/icons?i=java) | 13.8 |
+
+
 
 ## Works | Trabalhos
 
