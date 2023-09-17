@@ -67,9 +67,9 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 
 | Título | Cadeira | Ano | Semestre | Linguagens Usadas | Nota |
 |:-------|:--------|:---:|:---------|:------------------|:----:|
-| [Minesweeper](/first_year/p1/Minesweeper/) | Programação 1 | 1º | 1º | ![Tools](https://skillicons.dev/icons?i=c) | 19   |
+| [Minesweeper](/first_year/p1/Minesweeper/) | Programação 1 | 1º | 1º | ![C language](https://skillicons.dev/icons?i=c) | 19   |
 | [Dry Machine](/first_year/sd/Dry%20Machine/) | Sistemas Digitais | 1º | 1º |  | 16   |
-| [Keyboard](/first_year/dsa1/Keyboard/)     | E.D.A. 1      | 1º | 2º | ![Tools](https://skillicons.dev/icons?i=c) | 18.8 |
+| [Keyboard](/first_year/dsa1/Keyboard/)     | E.D.A. 1      | 1º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 18.8 |
 | [Ed](/first_year/ac1/Ed/)     | A.C. 1     | 1º | 2º | Assembly (Arquitetura RISC-V) | 20 |
 
 
@@ -80,6 +80,16 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 
 | Título | Cadeira | Ano | Semestre | Linguagens Usadas | Nota |
 |:-------|:--------|:---:|:---------|:------------------|:----:|
+| [Aquaman Tales](/second_year/cg/Aquaman%20Tales/) | Computação Gráfica | 2º | 1º | ![JavaScript](https://skillicons.dev/icons?i=js) | 16.2   |
+| [SVG Work](/second_year/cg/SVG%20Work/) | Computação Gráfica | 2º | 1º | ![JavaScript e SVG](https://skillicons.dev/icons?i=js,SVG) | 4.8   |
+| [X3D Work](/second_year/cg/X3D%20Work/) | Computação Gráfica | 2º | 1º | ![JavaScript](https://skillicons.dev/icons?i=js) | 6.6   |
+| [3JS Work](/second_year/cg/3JS%20Work/) | Computação Gráfica | 2º | 1º | ![JavaScript](https://skillicons.dev/icons?i=js) | 14.6   |
+| [Database Work 1](/second_year/bd/Database%20Work%201/) | Bases de Dados | 2º | 1º | ![SQL](https://skillicons.dev/icons?i=postgres) | 19.16   |
+| [Database Work 2](/second_year/bd/Database%20Work%202/) | Bases de Dados | 2º | 1º | ![SQL](https://skillicons.dev/icons?i=postgres) | 16.60   |
+| [O.S. Work 1](/second_year/so/SO%20Work%201/) | Sistemas Operativos | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 16   |
+| [O.S. Work 2](/second_year/so/S.O.%20Work%202/) | Sistemas Operativos | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 18   |
+| [One Text Chat V1.0](/second_year/redes/OneTextChat%20v1.0/) | Redes de Computadores | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 19.6 |
+| [One Text Chat V2.0](/second_year/redes/OneTextChat%20v2.0/) | Redes de Computadores | 2º | 2º | ![C language](https://skillicons.dev/icons?i=c) | 19.6 |
 
 ## Works | Trabalhos
 
@@ -88,7 +98,7 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 
 | Título | Cadeira | Ano | Semestre | Linguagens Usadas | Nota |
 |:-------|:--------|:---:|:---------:|:------------------|:----:|
-| [Room Rent RMI](/third_year/sd/sd-t01-48566-48976/) | S.D. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=java) | 16 |
+| [Room Rent RMI](/third_year/sd/sd-t01-48566-48976/) | S.D. | 3º | 1º | ![Java](https://skillicons.dev/icons?i=java) | 16 |
 | [Room Rent REST](/third_year/sd/sd-t02-48566-48976/) | S.D. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=java,spring) | 13 | 
 | [Room Rent (No backend)](/third_year/tw/tweb-t1-48973-48976/) | T.W. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=js,html,css) | 17 |
 | [Room Rent WebApp](/third_year/tw/tweb-t2-48973-48976/) | T.W. | 3º | 1º | ![Tools](https://skillicons.dev/icons?i=js,html,css) ![Tools](https://skillicons.dev/icons?i=java,spring) | 16 |
