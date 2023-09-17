@@ -68,7 +68,10 @@ Conteúdo elaborado ou adquirido no decorrer do Mestrado em Engenharia Informát
 | Título | Cadeira | Ano | Semestre | Linguagens Usadas | Nota |
 |:-------|:--------|:---:|:---------|:------------------|:----:|
 | [Minesweeper](/first_year/p1/Minesweeper/) | Programação 1 | 1º | 1º | ![Tools](https://skillicons.dev/icons?i=c) | 19   |
+| [Dry Machine](/first_year/sd/Dry%20Machine/) | Sistemas Digitais | 1º | 1º |  | 16   |
 | [Keyboard](/first_year/dsa1/Keyboard/)     | E.D.A. 1      | 1º | 2º | ![Tools](https://skillicons.dev/icons?i=c) | 18.8 |
+| [Ed](/first_year/ac1/Ed/)     | A.C. 1     | 1º | 2º | Assembly (Arquitetura RISC-V) | 20 |
+
 
 ## Works | Trabalhos
 
